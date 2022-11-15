@@ -1,0 +1,78 @@
+@import './layout.scss';
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.w {
+  width: 100%;
+}
+
+.h {
+  height: 100%;
+}
+
+.dl {
+  display: inline-block;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.page-container {
+  width: 100%;
+  &.bg-white {
+    background-color: #fff;
+  }
+}
+.page-section {
+  margin: 0 auto;
+  width: $contentWidth;
+  padding: 70px 0 50px;
+  .page-section-header {
+    margin-bottom: 26px;
+    text-align: center;
+  }
+  .page-section-title {
+    font-size: 40px;
+    font-weight: bold;
+    &.hot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::after {
+        content: '热门';
+        width: 44px;
+        height: 24px;
+        display: inline-block;
+        background: #ff666f;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 12px 12px 12px 0;
+        line-height: 24px;
+        margin-left: 6px;
+      }
+    }
+  }
+  .page-section-subtitle {
+    font-size: 16px;
+    color: rgba(74, 89, 111, 0.6);
+  }
+}
+
+.img-wrap {
+  .img-wrap-pic {
+    transform: scale(1) translateZ(0);
+    transition: all 220ms;
+  }
+  &:hover {
+    .img-wrap-pic {
+      transform: scale(1.03) translateZ(0);
+    }
+  }
+}
