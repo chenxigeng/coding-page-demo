@@ -1,7 +1,9 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + Pinia搭建的Demo
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+1.这个DEMO样式及动效主要参考自https://coding.qq.com/home/首页部分
+2.交互部分全由自己手写，发现体验不好的问题欢迎指出，感谢~
 
-## Recommended IDE Setup
+# 快速启动步骤
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+1. "npm i"
+2. "npm run dev"
