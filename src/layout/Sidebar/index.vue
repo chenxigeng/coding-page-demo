@@ -52,7 +52,6 @@ import { onMounted, onUnmounted } from 'vue'
 const sidebarStore = useSidebarStore()
 
 const anchorPosition = anchor => {
-  sidebarStore.setAnchor(anchor)
   sidebarStore.anchorPosition(anchor)
 }
 
@@ -86,7 +85,7 @@ const scrollHandle = ({ target }) => {
   }
   for (let i = len - 1; i >= 0; i--) {
     const curReference = offsetTopList[i].offsetTop // 当前参考值
-    if (flag && curScrollTop >= curReference) {
+    if (flag && curScrollTop >= curReference - 10) {
       flag = false
       sidebarStore.setAnchor(offsetTopList[i].anchor)
     }
